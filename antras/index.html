@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style>
+
+        #container {
+            margin: 120px auto;
+            width: 60%;
+            border: 0px;
+            padding: 15px;
+            position: relative;
+                  }
+        #container div {
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+                     }
+        .cell
+            {
+            background-color: white;
+            color: blue;
+            }
+        table {
+            border-collapse: collapse;
+            width: 40%;
+                }
+        th, td
+            {
+            border-bottom: 3px groove;
+            border-right: 3px groove;
+            border-left: 0px;
+            text-align: left;
+            padding: 15px;
+            }
+        th {
+            background-color: rgba(0, 139, 69, 0.5);
+            color: white;
+            }
+        td {
+            color: grey;
+            }
+        tr: {
+            background-color:#bc1e13;
+            }
+        table tbody tr:hover td {
+            background: #fee9ff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+<div>
+<table align="center">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td class="cell">Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+    </tr>
+    <tr>
+        <td>Joe</td>
+        <td class="cell">Swanson</td>
+        <td>$300</td>
+    </tr>
+    <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td class="cell" >$250</td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>
